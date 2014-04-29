@@ -6,7 +6,8 @@ gem 'rails', '4.0.4'
 gem 'rails-api'
 
 gem 'faker'
-gem 'pg', :group => :production
+gem 'pg'
+gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails'
