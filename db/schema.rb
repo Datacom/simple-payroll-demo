@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20140429015622) do
 
   create_table "projects", force: true do |t|
     t.string   "name"
-    t.string   "client"
+    t.string   "organisation"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
