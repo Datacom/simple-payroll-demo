@@ -3,7 +3,8 @@ module Api::V1
     # GET /leave_requests
     # GET /leave_requests.json
     def index
-      @leave_requests = LeaveRequest.all
+      # @leave_requests = current_user.leave_requests
+      @leave_requests = @resource_owner.leave_requests
       render json: @leave_requests
     end
 

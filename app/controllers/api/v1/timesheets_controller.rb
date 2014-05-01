@@ -3,7 +3,8 @@ module Api::V1
     # GET /timesheets
     # GET /timesheets.json
     def index
-      @timesheets = Timesheet.all
+      # @timesheets = current_user.timesheets
+      @timesheets = @resource_owner.timesheets
       render json: @timesheets
     end
 
